@@ -61,3 +61,31 @@ article p {
     flex-wrap: wrap;
     justify-content:space-around;
 }
+
+/* section : nos compétences*/
+
+#skills-container {
+    display:flex;
+    justify-content: space-around;
+}
+.skill-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.skill-logo {
+    height: 150px;
+    width: 200px;
+    object-fit: contain;
+}
+
+h3 {
+    height : 150px;
+    /* to center text vertically in middle of h3*/
+    display:flex;
+    align-items: center;
+}
