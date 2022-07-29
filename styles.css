@@ -37,15 +37,27 @@ h1 {
 }
 
 section {
-    margin : 20px;
+    margin : 60px 20px;
 }
 /*Section : notre équipe*/
+
+#team-section {
+    display:flex;
+    flex-direction: column;
+}
+
+#team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-self:center;
+    max-width: 1250px;
+}
 
 article {
     width: 300px;
     height: 380px;
     margin: 0 10px 5px 10px;
-    
 }
 
 article img {
@@ -54,12 +66,6 @@ article img {
 
 article p {
     margin: 5px;
-}
-
-#team-container {
-    display:flex;
-    flex-wrap: wrap;
-    justify-content:space-around;
 }
 
 /* section : nos compétences*/
@@ -88,4 +94,71 @@ h3 {
     /* to center text vertically in middle of h3*/
     display:flex;
     align-items: center;
+}
+
+/* Footer */
+
+footer {
+    background-color: #665d1b;
+    color: white;
+    height: 150px;
+    display: flex;
+}
+
+ul {
+    display:flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding:0;
+}
+
+li {
+    list-style: none;
+}
+
+i {
+    margin-right: 10px;
+}
+
+/* Media Queries*/
+
+@media (max-width: 992px) {
+    #skills-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .skill-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    h3 {
+        width: 200px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .skill-container:nth-of-type(odd) {
+        flex-direction : column-reverse;
+    }
+    .skill-container:nth-of-type(even) {
+        flex-direction: column;
+    }
+    .skill-container {
+        margin: 0 0 30px 0;
+    }
+    h3 {
+        height: 50px;
+    }
+    .skill-container:last-of-type {
+        margin: 0;
+    }
+    footer {
+        height: 250px;
+    }
+    ul {
+        flex-direction: column;
+        justify-content: center;
+    }
 }
