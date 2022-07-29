@@ -1,0 +1,63 @@
+/*General settings*/
+
+body {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+
+#logo-container {
+width: 200px;
+height: 100px;
+}
+
+#logo{
+width: 200px;
+height: 100px;
+object-fit: cover;
+}
+
+#banner {
+height: 350px;
+width: 100%;
+object-fit: cover;
+}
+
+/* main general*/
+
+h1, h2, article p {
+color: #665d1b;
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    margin : 20px;
+}
+/*Section : notre équipe*/
+
+article {
+    width: 300px;
+    height: 380px;
+    margin: 0 10px 5px 10px;
+    
+}
+
+article img {
+    width: 100%;
+}
+
+article p {
+    margin: 5px;
+}
+
+#team-container {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
